@@ -5,12 +5,12 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
     #main-info-images img:nth-child(2) {
         left: -45px;
     }
 
-    #main-info-images img {
+    #main-info-images img:first-child {
         max-width: 405px;
     }
 
@@ -18,4 +18,112 @@
         max-width: 300px;
     }
 
+}
+
+@media screen and (max-width: 1020px) {
+    #main #main-container {
+        padding-bottom: 0;
+    }
+
+    #main-info-images img:first-child {
+        display: none;
+    }
+
+    #main-info-images img:nth-child(2) {
+        left: -367px;
+        top: -36px;
+    }
+
+    #main-info-description-items {
+        max-width: 400px;
+        flex-wrap: wrap;
+    }
+
+    #main-info-description-items .main-info-description-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #price {
+        margin-top: 0;
+    }
+
+    #price-blocks .price-block {
+        max-width: 220px;
+        padding: 20px 0;
+    }
+
+    #price #price-container .title-1 {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    #price-blocks .price-block .price-block-cost {
+        font-size: 25px;
+        line-height: 25px;
+        margin: 20px 0 30px 0;
+    }
+
+    #price-blocks .price-block .price-block-info {
+        font-size: 14px;
+    }
+
+    .btn-1 {
+        width: 180px;
+    }
+
+    #reviews {
+        padding: 35px 15px;
+    }
+
+    #reviews-block {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #reviews-container .review-block:nth-child(3) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #main-header-menu {
+        width: 350px;
+        order: 3;
+    }
+
+    #order {
+        padding-top: 20px;
+        padding-bottom: 90px;
+    }
+
+    #order-action {
+        width: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #order-action input {
+        margin-bottom: 20px;
+    }
+
+    #autopark {
+        margin-top: 51px;
+        margin-bottom: 51px;
+    }
+
+    .cars .car .cars-foto {
+        max-width: 420px;
+    }
+
+    #footer {
+        padding: 50px 15px;
+    }
+
+    #footer-callback {
+        display: none;
+    }
 }

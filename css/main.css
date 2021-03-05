@@ -94,7 +94,7 @@ body {
 
 #main-info-images img:nth-child(2) {
     position: absolute;
-    top: -72px;
+    top: -71px;
     left: -108px;
 }
 
@@ -331,7 +331,6 @@ h2 {
 
 .cars .car .cars-foto {
     max-width: 641px;
-    height: 453px;
 }
 
 .cars .car .cars-foto img {
@@ -453,11 +452,9 @@ h2 {
 }
 
 #order-action {
-    position: relative;
-    max-width: 800px;
+    width: 850px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 #order-action input {
@@ -466,6 +463,10 @@ h2 {
     border: none;
     border-bottom: 1px solid #333333;
     outline: none;
+}
+
+#order-action .action {
+    position: relative;
 }
 
 #order-action .action .btn {
@@ -481,9 +482,9 @@ h2 {
 }
 
 #checkbox-accept {
-    position: relative;
-    top: 15px;
-    left: 550px;
+    position: absolute;
+    top: 70px;
+    right: 1px;
     font-size: 12px;
     text-align: center;
     letter-spacing: 0.015em;
