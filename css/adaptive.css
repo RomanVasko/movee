@@ -1,0 +1,21 @@
+@media screen and (max-width: 1200px) {
+    #main, #about, #price, #autopark, #reviews, #order, #footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #main-info-images img:nth-child(2) {
+        left: -45px;
+    }
+
+    #main-info-images img {
+        max-width: 405px;
+    }
+
+    #price-blocks .price-block {
+        max-width: 300px;
+    }
+
+}
