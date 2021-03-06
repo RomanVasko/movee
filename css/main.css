@@ -357,11 +357,11 @@ h2 {
 }
 
 .slick-prev:before {
-    content: url("../images/vector1.png");
+    content: url("../images/Vector1.png");
 }
 
 .slick-next:before {
-    content: url("../images/vector2.png");
+    content: url("../images/Vector2.png");
 }
 
 .slick-initialized .slick-slide {
