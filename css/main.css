@@ -41,6 +41,9 @@ body {
     color: black;
 }
 
+#burger {
+    display: none;
+}
 .logo {
     font-family: MontserratBold, sans-serif;
     font-size: 30px;

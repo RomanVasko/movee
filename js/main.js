@@ -34,4 +34,11 @@ $(document).ready(() => {
         fade: true
     });
 
+    $('#burger').click(() => {
+        $('#main-header').toggleClass('menu-open');
+    })
+
+    $('#main-header-menu a').click(() => {
+        $('#main-header').removeClass('menu-open');
+    })
 })
