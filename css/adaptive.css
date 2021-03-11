@@ -209,7 +209,7 @@
     }
 
     #autopark .autopark-category .category {
-        padding: 5px 5px;
+        padding: 8px 7px;
     }
 
     .car {
@@ -247,8 +247,8 @@
     .mg-slick-dots {
         position: absolute;
         margin-bottom: unset;
-        bottom: calc(21%);
-        right: calc(40%);
+        bottom: 17%;
+        right: 40%;
     }
 
     .car .cars-information div {
@@ -281,8 +281,13 @@
         display: none;
     }
 
-    #main-header {
-        position: relative;
+    #main-header-menu::after {
+        content: "\2716";
+        position: fixed;
+        top: 15%;
+        right: 10%;
+        color: black;
+        font-size: 36px;
     }
 
     #main-info-description-text h1 {
@@ -301,7 +306,8 @@
     #main-header-menu {
         position: fixed;
         top: 0;
-        background: rgba(219, 55, 55, 0.8);
+        left: 0;
+        background: rgba(237, 251, 238, 0.9);
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -407,6 +413,7 @@
 
     #map-info {
         position: static;
+        max-width: unset;
     }
 
     #map-info ul {

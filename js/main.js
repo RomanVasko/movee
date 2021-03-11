@@ -18,7 +18,7 @@ $(document).ready(() => {
 
 
     window.addEventListener("resize", function () {
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth >= 769) {
             $('#price-blocks').slick('unslick');
 
         } else {
@@ -92,7 +92,7 @@ $(document).ready(() => {
         $('#main-header').toggleClass('menu-open');
     })
 
-    $('#main-header-menu a').click(() => {
+    $('#main-header-menu a, #main-header-menu, #main-header-menu::after').click(() => {
         $('#main-header').removeClass('menu-open');
     })
 })
