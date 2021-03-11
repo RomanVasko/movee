@@ -116,7 +116,7 @@
 
     #main-info-images img:nth-child(2) {
         left: -395px;
-        top: 186px;
+        top: 185px;
     }
 
     #main-header-menu {
@@ -124,9 +124,18 @@
         order: 3;
     }
 
+    .rectangle {
+        display: none;
+    }
+
+    .btn:hover {
+        box-shadow: 0 0 10px 1px #ea2626;
+        transform: unset;
+    }
 
     #price-blocks .price-block {
         max-width: unset;
+
     }
 
     #price-blocks .price-block-info .btn-1 {
@@ -144,8 +153,8 @@
         align-items: center;
     }
 
-    #order-action input {
-        margin-bottom: 20px;
+    #order-action .action .btn {
+        margin-top: 15px;
     }
 
     #autopark {
@@ -162,7 +171,7 @@
     }
 
     #map-info {
-        left: 150px;
+        left: 80px;
     }
 
     #footer {
@@ -184,60 +193,94 @@
     #main-header .phone {
         display: none;
     }
-}
 
-@media screen and (max-width: 490px) {
-    #about {
-        margin-top: 15px;
+    #main-info-description-text h1 {
+        font-size: 60px;
     }
 
-    #about #about-container .title {
-        font-size: 24px;
+    #main-info-images img:nth-child(2) {
+        top: 159px;
     }
 
-    .about-item {
+    #autopark .autopark-category {
+        justify-content: space-evenly;
+        margin: 20px 0;
+    }
+
+    #autopark .autopark-category .category {
+        padding: 5px 5px;
+    }
+
+    .car {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 310px;
     }
 
-    .about-item .about-item-description {
-        max-width: 320px;
-        text-align: center;
+    .car .cars-information {
+        order: 2;
     }
 
-    .about-item .images {
-        margin-bottom: 10px;
+    .car .cars-information .btn-1 {
+        order: 3;
+        width: 292px;
     }
-}
 
-@media screen and (max-width: 425px) {
-    #main-header-menu {
+    .car .cars-information div:nth-child(2n) {
         display: none;
     }
 
-    h1 {
-        font-size: 41px;
+    .car .cars-foto {
+        order: 1;
+    }
+
+    .cars-container {
+        position: relative;
+    }
+
+    .mg-slick-dots {
+        position: absolute;
+        margin-bottom: unset;
+    }
+
+    .car .cars-information div {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .car .cars-information div span {
+        display: none;
+    }
+
+    .car .cars-information div::before {
+        content: "/";
+        margin: 0 7px;
+    }
+
+    #reviews-container .review-block:nth-child(2), #reviews-container .review-block:nth-child(3) {
+        display: none;
+    }
+
+    #reviews-block, #reviews #reviews-container .title {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    #main-header-menu {
+        display: none;
     }
 
     #main-header {
         position: relative;
     }
 
-    .rectangle {
-        display: none;
-    }
-
-    #main-info-description-text h2 {
-        font-size: 25px;
-        margin-bottom: 421px;
+    #main-info-description-text h1 {
+        font-size: 41px;
     }
 
     #main-info-images img:nth-child(2) {
-        left: -370px;
-        top: 135px;
-        width: 275px;
+        top: 113px;
     }
 
     #burger {
@@ -271,33 +314,28 @@
         display: flex;
     }
 
-    .about-item .about-item-description .about-item-description-title {
-        font-size: 14px;
+    #about {
+        margin-top: 15px;
     }
 
-    .about-item .about-item-description .about-item-description-texts {
-        font-size: 14px;
-        width: 300px;
+    #about #about-container .title {
+        font-size: 24px;
     }
 
-    #autopark .autopark-category .category {
-        padding: 13px 10px;
+    .about-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 310px;
     }
 
-    #reviews-container .review-block:nth-child(2), #reviews-container .review-block:nth-child(3) {
-        display: none;
-    }
-
-    #order-text {
+    .about-item .about-item-description {
+        max-width: 320px;
         text-align: center;
     }
 
-    #map-info {
-        position: static;
-    }
-
-    #map-info ul {
-        padding: 0;
+    .about-item .images {
+        margin-bottom: 10px;
     }
 
     #footer {
@@ -328,4 +366,43 @@
         display: block;
         margin-top: 15px;
     }
+}
+
+@media screen and (max-width: 425px) {
+
+
+    #main-info-description-text h2 {
+        font-size: 25px;
+        margin-bottom: 421px;
+    }
+
+    #main-info-images img:nth-child(2) {
+        left: -370px;
+        top: 135px;
+        width: 275px;
+    }
+
+
+    .about-item .about-item-description .about-item-description-title {
+        font-size: 14px;
+    }
+
+    .about-item .about-item-description .about-item-description-texts {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    #order-text {
+        text-align: center;
+    }
+
+    #map-info {
+        position: static;
+    }
+
+    #map-info ul {
+        padding: 0;
+    }
+
+
 }
