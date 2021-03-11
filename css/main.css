@@ -412,6 +412,10 @@ h2 {
     margin-bottom: 0;
 }
 
+.slick-dots li button:before {
+    font-size: 39px;
+}
+
 .slick-dots li.slick-active button::before {
     opacity: 1;
 }
@@ -419,7 +423,8 @@ h2 {
 .slick-dots li.slick-active button::after {
     content: url("../images/dots_active.png");
     position: absolute;
-    top: -1px;
+    top: 0;
+    left: 0;
 }
 
 #reviews {
