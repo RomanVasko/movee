@@ -42,6 +42,10 @@ body {
     color: black;
 }
 
+#main #main-container #main-header a:hover {
+    color: #ea2626;
+}
+
 #burger {
     display: none;
 }
@@ -305,7 +309,7 @@ h2 {
 }
 
 .btn-1:hover {
-    box-shadow: 0px 0px 5px 5px #fce47c;
+    box-shadow: 0 0 5px 5px #fce47c;
 }
 
 #autopark {
@@ -416,7 +420,6 @@ h2 {
     content: url("../images/dots_active.png");
     position: absolute;
     top: -1px;
-    left: 0px;
 }
 
 #reviews {
@@ -615,6 +618,10 @@ h2 {
     color: #333333;
     margin-bottom: 15px;
     font-size: 20px;
+}
+
+#footer-menu a:hover, #footer-info-1 a:hover {
+    color: #ea2626;
 }
 
 #footer-network {
