@@ -124,6 +124,15 @@
         order: 3;
     }
 
+
+    #price-blocks .price-block {
+        max-width: unset;
+    }
+
+    #price-blocks .price-block-info .btn-1 {
+        width: unset;
+    }
+
     #order {
         padding-top: 20px;
         padding-bottom: 90px;
@@ -142,6 +151,10 @@
     #autopark {
         margin-top: 51px;
         margin-bottom: 51px;
+    }
+
+    .slick-dots li.slick-active button::after {
+        top: 0;
     }
 
     .cars .car .cars-foto {
@@ -173,13 +186,58 @@
     }
 }
 
+@media screen and (max-width: 490px) {
+    #about {
+        margin-top: 15px;
+    }
+
+    #about #about-container .title {
+        font-size: 24px;
+    }
+
+    .about-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 310px;
+    }
+
+    .about-item .about-item-description {
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .about-item .images {
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     #main-header-menu {
         display: none;
     }
 
+    h1 {
+        font-size: 41px;
+    }
+
     #main-header {
         position: relative;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    #main-info-description-text h2 {
+        font-size: 25px;
+        margin-bottom: 421px;
+    }
+
+    #main-info-images img:nth-child(2) {
+        left: -370px;
+        top: 135px;
+        width: 275px;
     }
 
     #burger {
@@ -209,10 +267,65 @@
         display: none;
     }
 
-    /*#main-header.menu-open {*/
-    /*    background: rgba(0, 0, 0, 0.8);*/
-    /*}*/
     #main-header.menu-open #main-header-menu {
         display: flex;
+    }
+
+    .about-item .about-item-description .about-item-description-title {
+        font-size: 14px;
+    }
+
+    .about-item .about-item-description .about-item-description-texts {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    #autopark .autopark-category .category {
+        padding: 13px 10px;
+    }
+
+    #reviews-container .review-block:nth-child(2), #reviews-container .review-block:nth-child(3) {
+        display: none;
+    }
+
+    #order-text {
+        text-align: center;
+    }
+
+    #map-info {
+        position: static;
+    }
+
+    #map-info ul {
+        padding: 0;
+    }
+
+    #footer {
+        padding: 30px 15px;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer-info-1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+
+    #footer-info-1 div {
+        margin: 10px 0 !important;
+    }
+
+    #footer-network {
+        margin: 20px 0;
+    }
+
+    #footer-callback {
+        display: block;
+        margin-top: 15px;
     }
 }

@@ -21,6 +21,7 @@ body {
 }
 
 #main {
+    position: relative;
     background: #FED100;
 }
 
@@ -44,6 +45,7 @@ body {
 #burger {
     display: none;
 }
+
 .logo {
     font-family: MontserratBold, sans-serif;
     font-size: 30px;
@@ -173,12 +175,10 @@ h2 {
 }
 
 .about-item {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 500px;
-    height: 81px;
     margin-bottom: 50px;
 }
 
@@ -193,7 +193,11 @@ h2 {
     margin-bottom: 15px;
 }
 
-.about-item:first-child img:nth-child(2), .about-item:nth-child(2) img:nth-child(2), .about-item:nth-child(3) img:nth-child(2), .about-item:nth-child(4) img:nth-child(2) {
+.about-item .images {
+    position: relative;
+}
+
+.about-item:first-child .images img:nth-child(2), .about-item:nth-child(2) .images img:nth-child(2), .about-item:nth-child(3) .images img:nth-child(2), .about-item:nth-child(4) .images img:nth-child(2) {
     position: absolute;
     left: 3px;
     z-index: -1;
@@ -383,6 +387,41 @@ h2 {
     z-index: 1;
 }
 
+/*.mg-slick-dots {*/
+/*    display: none;*/
+/*}*/
+
+.slick-dots li button:before {
+    font-size: 43px;
+}
+
+.mg-slick-dots {
+    margin-bottom: 20px;
+}
+
+.mg-slick-dots .slick-dots {
+    position: static;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+/*.mg-slick-dots*/
+/*    !*.mg-slick-dots .slick-dots.slick-active {*!*/
+/*!*    color: rgba(114, 17, 99, 0.702);*!*/
+/*!*}*!*/
+.slick-dots li.slick-active button::before {
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::after {
+    content: url("../images/dots_active.png");
+    position: absolute;
+    top: -1px;
+    left: 0px;
+}
+
 #reviews {
     background: #FED100;
     padding: 100px 0;
@@ -514,7 +553,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    width: 368px;
+    max-width: 368px;
     padding: 15px;
     border-radius: 10px;
     top: 145px;
@@ -542,6 +581,7 @@ h2 {
 #map-address {
     font-size: 0;
 }
+
 #footer {
     padding: 100px 0;
     background: #FED100;
